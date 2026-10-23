@@ -1,0 +1,10 @@
+[
+  { "id": 10, "name": "Laptop", "category": "Informatique", "price": 8500, "stock": 8 },
+  { "id": 11, "name": "Souris", "category": "Informatique", "price": 180, "stock": 40 },
+  { "id": 12, "name": "Clavier", "category": "Informatique", "price": 350, "stock": 25 },
+  { "id": 13, "name": "Ecran", "category": "Informatique", "price": 2200, "stock": 12 },
+  { "id": 14, "name": "Casque audio", "category": "Accessoires", "price": 450, "stock": 20 },
+  { "id": 15, "name": "Sac a dos", "category": "Accessoires", "price": 300, "stock": 30 },
+  { "id": 16, "name": "Cahier", "category": "Papeterie", "price": 20, "stock": 150 },
+  { "id": 17, "name": "Stylo", "category": "Papeterie", "price": 5, "stock": 300 }
+]
