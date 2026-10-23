@@ -1,6 +1,6 @@
 [
   {
-    "id": 101, "customerId": 1, "status": "Livrée", "date": "2026-10-10",
+    "id": 101, "customerId": 1, "status": "Livree", "date": "2026-10-10",
     "items": [ { "productId": 10, "quantity": 1 }, { "productId": 11, "quantity": 2 } ]
   },
   {
@@ -8,11 +8,11 @@
     "items": [ { "productId": 12, "quantity": 1 }, { "productId": 17, "quantity": 5 } ]
   },
   {
-    "id": 103, "customerId": 3, "status": "Annulée", "date": "2026-10-12",
+    "id": 103, "customerId": 3, "status": "Annulee", "date": "2026-10-12",
     "items": [ { "productId": 16, "quantity": 3 } ]
   },
   {
-    "id": 104, "customerId": 4, "status": "Livrée", "date": "2026-10-13",
+    "id": 104, "customerId": 4, "status": "Livree", "date": "2026-10-13",
     "items": [ { "productId": 13, "quantity": 2 } ]
   },
   {
@@ -20,15 +20,15 @@
     "items": [ { "productId": 14, "quantity": 1 }, { "productId": 15, "quantity": 1 } ]
   },
   {
-    "id": 106, "customerId": 1, "status": "Livrée", "date": "2026-10-15",
+    "id": 106, "customerId": 1, "status": "Livree", "date": "2026-10-15",
     "items": [ { "productId": 12, "quantity": 1 }, { "productId": 11, "quantity": 1 } ]
   },
   {
-    "id": 107, "customerId": 6, "status": "Livrée", "date": "2026-10-16",
+    "id": 107, "customerId": 6, "status": "Livree", "date": "2026-10-16",
     "items": [ { "productId": 10, "quantity": 1 }, { "productId": 14, "quantity": 1 }, { "productId": 16, "quantity": 2 } ]
   },
   {
-    "id": 108, "customerId": 2, "status": "Annulée", "date": "2026-10-17",
+    "id": 108, "customerId": 2, "status": "Annulee", "date": "2026-10-17",
     "items": [ { "productId": 13, "quantity": 1 } ]
   },
   {
@@ -36,7 +36,7 @@
     "items": [ { "productId": 15, "quantity": 2 }, { "productId": 16, "quantity": 4 }, { "productId": 17, "quantity": 10 } ]
   },
   {
-    "id": 110, "customerId": 5, "status": "Livrée", "date": "2026-10-19",
+    "id": 110, "customerId": 5, "status": "Livree", "date": "2026-10-19",
     "items": [ { "productId": 11, "quantity": 3 } ]
   }
 ]
