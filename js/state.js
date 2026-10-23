@@ -11,5 +11,6 @@ export const state = {
   // Les choix de l'utilisateur
   searchText: "",
   statusFilter: "all",
-  categoryFilter: "all"
+  categoryFilter: "all",
+  selectedOrderId: null
 };
