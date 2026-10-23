@@ -88,3 +88,46 @@ export function renderOrders(orders) {
     noResult.classList.add("d-none");
   }
 }
+
+
+// Affiche le détail d'une commande dans la fenêtre (modal) Bootstrap
+export function renderOrderDetail(order) {
+  if (!order) {
+    return;
+  }
+
+  document.getElementById("orderModalTitle").textContent = "Commande n°" + order.id;
+
+  const rows = order.lines
+    .map(line => `
+      <tr>
+        <td>${line.productName}</td>
+        <td class="text-end">${formatAmount(line.price)}</td>
+        <td class="text-center">${line.quantity}</td>
+        <td class="text-end">${formatAmount(line.amount)}</td>
+      </tr>`)
+    .join("");
+
+  document.getElementById("order-detail").innerHTML = `
+    <p class="mb-1"><strong>Identifiant :</strong> ${order.id}</p>
+    <p class="mb-1"><strong>Client :</strong> ${order.customerName}</p>
+    <p class="mb-1"><strong>Ville :</strong> ${order.city}</p>
+    <p class="mb-1"><strong>Date :</strong> ${order.date}</p>
+    <p><strong>Statut :</strong> ${getStatusBadge(order.status)}</p>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th class="text-end">Prix</th>
+          <th class="text-center">Quantité</th>
+          <th class="text-end">Montant</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p class="text-end fs-5"><strong>Total : ${formatAmount(order.total)}</strong></p>`;
+
+  // Ouvre la fenêtre (modal) avec Bootstrap
+  const modalElement = document.getElementById("orderModal");
+  bootstrap.Modal.getOrCreateInstance(modalElement).show();
+}
